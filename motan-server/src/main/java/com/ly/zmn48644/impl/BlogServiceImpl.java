@@ -4,6 +4,8 @@ package com.ly.zmn48644.impl;
 import com.ly.zmn48644.api.BlogService;
 import com.ly.zmn48644.api.model.Blog;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * 作者：张明楠（wechat:zhangmingnan1990）
  * 时间：2018/6/16
@@ -16,11 +18,14 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public int totalCount() {
-//        try {
-//            TimeUnit.SECONDS.sleep(1);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        System.out.println("开始处理。。");
+        try {
+            //模拟服务端处理延迟一秒钟
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("处理结束。。");
         return 100;
     }
 }

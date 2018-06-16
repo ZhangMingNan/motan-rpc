@@ -10,5 +10,6 @@ import com.weibo.api.motan.transport.async.MotanAsync;
 @MotanAsync
 public interface BlogService {
     Blog findBlogById(Integer id);
+
     int totalCount();
 }
