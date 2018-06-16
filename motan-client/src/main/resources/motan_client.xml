@@ -6,5 +6,5 @@
    http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
 
     <!-- reference to the remote service -->
-    <motan:referer id="blogService" interface="com.ly.zmn48644.api.BlogService" directUrl="127.0.0.1:8002"/>
+    <motan:referer id="blogService" interface="com.ly.zmn48644.api.BlogServiceAsync" directUrl="127.0.0.1:8002" timeout="3000"/>
 </beans>

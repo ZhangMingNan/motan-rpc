@@ -13,4 +13,14 @@ public class BlogServiceImpl implements BlogService {
     public Blog findBlogById(Integer id) {
         return new Blog(1, "motan框架入门", "简单高效的rpc框架");
     }
+
+    @Override
+    public int totalCount() {
+//        try {
+//            TimeUnit.SECONDS.sleep(1);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        return 100;
+    }
 }

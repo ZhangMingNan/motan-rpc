@@ -8,5 +8,5 @@
     <!-- service implemention bean -->
     <bean id="blogServiceImpl" class="com.ly.zmn48644.impl.BlogServiceImpl"/>
     <!-- exporting service by motan -->
-    <motan:service interface="com.ly.zmn48644.api.BlogService" ref="blogServiceImpl" export="8002"/>
+    <motan:service interface="com.ly.zmn48644.api.BlogService" ref="blogServiceImpl" export="8002" />
 </beans>
