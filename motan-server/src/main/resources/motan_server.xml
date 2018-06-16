@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:motan="http://api.weibo.com/schema/motan"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+   http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
+
+    <!-- service implemention bean -->
+    <bean id="blogServiceImpl" class="com.ly.zmn48644.impl.BlogServiceImpl"/>
+    <!-- exporting service by motan -->
+    <motan:service interface="com.ly.zmn48644.api.BlogService" ref="blogServiceImpl" export="8002"/>
+</beans>
