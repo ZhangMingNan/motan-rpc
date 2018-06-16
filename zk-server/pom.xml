@@ -8,36 +8,27 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>motan-server</artifactId>
-
-    <name>motan-server</name>
-    <!-- FIXME change it to the project's website -->
+    <artifactId>zk-server</artifactId>
+    <name>zk-server</name>
     <url>http://www.example.com</url>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.ly.48644</groupId>
-            <artifactId>motan-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
-        </dependency>
+
     </dependencies>
+
     <build>
 
         <plugins>
 
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-
+                <version>3.7.0</version>
             </plugin>
 
         </plugins>

@@ -15,9 +15,10 @@ public class Client {
         BlogServiceAsync service = (BlogServiceAsync) ctx.getBean("blogService");
         Blog blog = service.findBlogById(1);
         System.out.println(blog);
-
-        ResponseFuture responseFuture = service.totalCountAsync();
-        System.out.println(responseFuture.getValue());
+        for (int i = 0; i < 1000; i++) {
+            ResponseFuture responseFuture = service.totalCountAsync();
+            System.out.println(responseFuture.getValue());
+        }
         System.out.println("--");
 
     }

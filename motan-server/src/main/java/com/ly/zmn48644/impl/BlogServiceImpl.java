@@ -25,6 +25,7 @@ public class BlogServiceImpl implements BlogService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        System.out.println(Thread.currentThread().getName());
         System.out.println("处理结束。。");
         return 100;
     }

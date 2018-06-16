@@ -5,8 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
    http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd">
 
+    <motan:registry regProtocol="zookeeper" name="my_zookeeper" address="127.0.0.1:2181"/>
     <!-- service implemention bean -->
     <bean id="blogServiceImpl" class="com.ly.zmn48644.impl.BlogServiceImpl"/>
     <!-- exporting service by motan -->
-    <motan:service interface="com.ly.zmn48644.api.BlogService" ref="blogServiceImpl" export="8002" />
+    <motan:service interface="com.ly.zmn48644.api.BlogService" ref="blogServiceImpl" export="8002" registry="my_zookeeper"/>
 </beans>
