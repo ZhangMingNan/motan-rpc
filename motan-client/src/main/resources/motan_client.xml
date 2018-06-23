@@ -10,5 +10,5 @@
     <!--设置客户端超时时间-->
     <motan:protocol name="motan" requestTimeout="2000"/>
     <!-- reference to the remote service -->
-    <motan:referer id="blogService" interface="com.ly.zmn48644.api.BlogServiceAsync" protocol="motan" registry="my_zookeeper"/>
+    <motan:referer id="blogService" interface="com.ly.zmn48644.api.BlogService" protocol="motan" registry="my_zookeeper"/>
 </beans>
