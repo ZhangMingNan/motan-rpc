@@ -1,4 +1,4 @@
-package com.ly.zmn48644.impl;
+package com.ly.zmn48644;
 
 import com.weibo.api.motan.common.MotanConstants;
 import com.weibo.api.motan.util.MotanSwitcherUtil;
@@ -17,3 +17,4 @@ public class Server {
         System.out.println("server start...");
     }
 }
+ 
